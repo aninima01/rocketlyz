@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+:root {
+  /* Name: custom color palette
+     Author: Ilias Ism
+     URL: https://gradient.page */
+
+  /* CSS: .bg-gradient { background: var(--gradient) } */
+  --gradient: linear-gradient(to top left,#650076,#73A3B3);
+
+  --background: 300 65% 3.36%;
+  --foreground: 300 10% 97.1%;
+
+  --muted: 300 50% 12.6%;
+  --muted-foreground: 300 10% 54.2%;
+
+  --popover: 300 45% 5.46%;
+  --popover-foreground: 300 10% 97.1%;
+
+  --card: 300 45% 5.46%;
+  --card-foreground: 300 10% 97.1%;
+
+  --border: 300 50% 12.6%;
+  --input: 300 50% 12.6%;
+
+  --primary: 300 100% 42%;
+  --primary-foreground: 300 10% 97.1%;
+
+  --secondary: 300 50% 12.6%;
+  --secondary-foreground: 300 10% 97.1%;
+
+  --accent: 300 50% 12.6%;
+  --accent-foreground: 300 10% 97.1%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 300 10% 97.1%;
+
+  --ring: 300 100% 42%;
+  --radius: 0.5rem;
+}
+
+  .dark {
+    --background: 216 100% 98.04%;
+    --foreground: 213.6 100% 4.9%;
+
+    --primary: 214.12 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --card: 216 100% 98.04%;
+    --card-foreground: 213.6 100% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213.6 100% 4.9%;
+
+    --secondary: 214.74 100% 92.55%;
+    --secondary-foreground: 216 100% 0.98%;
+
+    --muted: 213.6 100% 95.1%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 213.6 100% 95.1%;
+    --accent-foreground: 214.12 100% 50%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90.2%;
+    --input: 0 0% 90.2%;
+    --ring: 214.12 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+::selection {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: hsl(var(--background));
+  border-radius: 8px;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  color: hsl(var(--primary));
+  background-color: hsl(var(--primary));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--background));
+}
+
+.dotPattern {
+  background-image: radial-gradient(rgb(35, 40, 68) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.use-automation-zoom-in {
+  animation: automation-zoom-in 0.5s;
+}
+
+.card-mask {
+  background: radial-gradient(ellipse at center, rgba(0, 75, 224, 0.15), transparent);
+}
+
+.gradient {
+  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgba(90, 24, 154, 1) 0deg, rgba(123, 44, 191, 1) 67.5deg,rgba(60, 9, 108, 1) 198.75deg,rgba(36, 0, 70, 1) 251.25deg, rgba(157, 78, 221, 1) 301.88deg, rgba(199, 125, 255, 1) 360deg);
+}
+
+.lamp {
+  opacity: 1;
+  transform: translateY(-200px) rotate(180deg) scale(2) translateZ(0px);
+}
+
+@keyframes automation-zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
