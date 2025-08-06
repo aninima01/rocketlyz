@@ -100,7 +100,7 @@ const HomePage = () => {
           <div className="max-w-md mx-auto text-start md:text-center">
             <SectionBadge title="Ready to Elevate Your Marketing Game?" />
             <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-              The Challenge of Today's Iterative Marketing
+              The Challenge of Today&apos;s Iterative Marketing
             </h2>
             <p className="text-muted-foreground mt-6">
               In today’s fast-paced business environment, continuously crafting
@@ -251,7 +251,7 @@ const HomePage = () => {
             <p className="text-muted-foreground mt-6">
               How Our Products Are Transforming Businesses and Empowering
               Growth. Don’t just take our word for it—hear directly from our
-              users - Here's what people are saying on X
+              users - Here&apos;s what people are saying on X
             </p>
           </div>
         </Container>
